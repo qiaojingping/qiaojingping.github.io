@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+nav:
+- name: Home
+    link: /
