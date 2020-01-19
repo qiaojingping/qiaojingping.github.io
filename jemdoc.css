@@ -18,8 +18,8 @@ body {
 }
 
 #layout-menu {
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
+	background: white;
+	border: None;
 	padding-top: 1.5em;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -28,7 +28,6 @@ body {
 	white-space: nowrap;
 	text-align: left;
 	vertical-align: top;
-	box-shadow: 0px 0px 4px 0px #122b6d;
 }
 
 #layout-menu td {
@@ -61,7 +60,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #d85656;
 	text-decoration: none;
 }
 
@@ -82,11 +81,12 @@ a:hover {
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
+	border-bottom: 2px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
 	font-weight: bold;
+	color: #d85656;
 }
 
 div.menu-item {
@@ -122,7 +122,7 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #d85656;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
