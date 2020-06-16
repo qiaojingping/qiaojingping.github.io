@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Research</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-64995133-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Navigation</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="files/jingping_qiao_2019.pdf">Bio/CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="papers.html">Papers</a></div>
+<div class="menu-item"><a href="projects.html">Projects</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href="courses.html">Courses</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research</h1>
+</div>
+<script type="text/javascript">
+   function toggleDisplay(id)
+   {
+      if (document.getElementById(id).style.display=="block")
+      {
+         document.getElementById(id).style.display="none";
+      }
+      else
+      {
+         document.getElementById(id).style.display="block";
+      }
+   }
+</script>
+<p><section class="card"></p>
+<p>My research interests include financial engineering, Monte Carlo simulation, and nonlinear optimization. I especially enjoy doing research in the intersection of these fields such as statistical learning, portfolio optimization, efficient simulation algorithms for risk management, etc. My professional background in actuarial science guides my research towards applying advanced theoretical methodologies to solve complex practical problems.</p>
+<p></section></p>
+<p><section class="card"></p>
+<h2>Green Simulation</h2>
+<table class="imgtable"><tr><td>
+<img src="image/GreenSim.jpg" alt="Green Simulation" width="350px" />&nbsp;</td>
+<td align="left"><p>In many financial, actuarial, industrial applications, simulation models are often run repeatedly to perform the same task with different inputs due to changing market conditions or system states.  &ldquo;Green simulation&rdquo; is the practice, currently under development, of reusing simulation output generated during previous experiments to increase the computational efficiency of the current experiment.
+Our research aims to develop efficient methods of output recycling and to examine their theoretical properties and practical performances.</p>
+</td></tr></table>
+<h3>Papers</h3>
+<ul>
+<li><p><i><b>Green Simulation: reusing the output of repeated experiments</b></i><br />
+<a href="index.html" target=&ldquo;blank&rdquo;>Mingbin Feng</a>, <a href="http://users.iems.northwestern.edu/~staum/" target=&ldquo;blank&rdquo;>Jeremy Staum</a><br />
+Submitted to Management Science (2016)<br />
+<a href="javascript:toggleDisplay('GreenSimMS');" target=&ldquo;blank&rdquo;>Abstract</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/0B88dFQMx1Q2CaVZodjJWOG9BRjQ/view?usp=sharing" target=&ldquo;blank&rdquo;>Tech Report <img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px"></a><br /></p>
+</li>
+</ul>
+<div id="GreenSimMS" class="abstractcontent">
+We introduce a new paradigm in simulation experiment design and analysis, called "green simulation," for the setting in which experiments are performed repeatedly with the same simulation model. Green simulation means reusing outputs from previous experiments to answer the question currently being asked of the simulation model. As a first method for green simulation, we propose estimators that reuse outputs from previous experiments by weighting them with likelihood ratios, when parameters of distributions in the simulation model differ across experiments. We analyze convergence of these green simulation estimators as more experiments are repeated, while a stochastic process changes the parameters used in each experiment. We find that green simulation reduces variance by more than an order of magnitude in examples involving catastrophe bond pricing and credit risk evaluation. 
+</div>
+<ul>
+<li><p><i>Green Simulation Designs for Repeated Experiments</i><br />
+<a href="index.html" target=&ldquo;blank&rdquo;>Mingbin Feng</a>, <a href="http://users.iems.northwestern.edu/~staum/" target=&ldquo;blank&rdquo;>Jeremy Staum</a>.<br />
+Proceedings of the 2015 Winter Simulation Conference, ed. L. Yilmaz, W. K. V. Chan, I. Moon, T. M. K. Roeder, C. Macal, and M. D. Rossetti, IEEE Press, 403-413.<br />
+<a href="javascript:toggleDisplay('GreenSimWSC');" target=&ldquo;blank&rdquo;>Abstract</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/0B88dFQMx1Q2CczRTcUtPUld6b1E/view?usp=sharing" target=&ldquo;blank&rdquo;>Tech Report <img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px"></a><br /></p>
+</li>
+</ul>
+<div id="GreenSimWSC" class="abstractcontent">
+In this article we present the concept of green simulation, which views simulation outputs as scarce resources that should be recycled and reused. Output recycling, if implemented properly, can turn the computational costs in an experiment into computation investments for future ones. Green simulation designs are particularly useful for experiments that are repeated periodically. In this article we focus on repeated experiments whose inputs are observations from some underlying stochastic processes. Importance sampling and multiple importance sampling are two particular output recycling implementations considered in this article. A periodic credit risk evaluation problem in the KMV model is considered. Results from our numerical experiments show significant accuracy improvements, measured by mean squared errors, as more and more outputs are recycled and reused.
+</div>
+<p></section></p>
+<p><section class="card"></p>
+<h2>Systemic Risk Components in a Network Model of Contagion </h2>
+<table class="imgtable"><tr><td>
+<img src="image/SystemicRisk.jpg" alt="Systemic Risk" width="400px" />&nbsp;</td>
+<td align="left"><p>Financial entities around the globe are interconnected and this giant global financial network requires sophisticated systemic risk management.
+This research addresses the question of risk attribution, &ldquo;Who contributed how much risk to the network's overall systemic risk?&rdquo;, which is a key question in systemic risk management.
+Seven risk attribution methods are developed to suit different systemic risk management objectives in different time and scale.</p>
+</td></tr></table>
+<h3>Papers</h3>
+<ul>
+<li><p><b><i>Systemic Risk Components in a Network Model of Contagion</i></b><br />
+<a href="http://users.iems.northwestern.edu/~staum/" target=&ldquo;blank&rdquo;>Jeremy Staum</a>, <a href="index.html" target=&ldquo;blank&rdquo;>Mingbin Feng</a>, and Ming Liu<br />
+Forthcoming, IIE Transactions.<br />
+<a href="javascript:toggleDisplay('SystemicRisk2015');" target=&ldquo;blank&rdquo;>Abstract</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/0B88dFQMx1Q2CRE9XSld6dUY3X1E/view?usp=sharing" target=&ldquo;blank&rdquo;>Tech Report <img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px"></a><br /></p>
+</li>
+</ul>
+<div id="SystemicRisk2015" class="abstractcontent">
+We show how to do systemic risk attribution in a network model of contagion with interlocking balance sheets, using the Shapley and Aumann-Shapley values. Along the way, we establish new results on sensitivity analysis of the Eisenberg-Noe network model of contagion, featuring a Markov-chain interpretation. We illustrate the design process for systemic risk attribution methods by developing seven of them.
+</div>
+<p></section></p>
+<p><section class="card"></p>
+<h2>Practical Algorithms for Value-at-Risk Portfolio Optimization Problems </h2>
+This article compares algorithms for solving portfolio optimization problems involving value-at-risk (VaR). These problems can be formulated as mixed integer programs (MIPs) or as chance-constrained mathematical programs (CCMPs). We propose improvements to their state-of-the-art MIP formulations. We also specialize an algorithm for solving general CCMPs, featuring practical interpretations. We present numerical experiments on practical-scale VaR problems using various algorithms and provide practical advice for solving these problems.
+<h3>Papers</h3>
+<ul>
+<li>
