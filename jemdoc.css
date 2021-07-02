@@ -359,6 +359,7 @@ tr.heading {
 
 img {
     border: none;
+	padding: 5px;
 }
 
 table.imgtable, table.imgtable td {
